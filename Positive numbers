@@ -1,0 +1,13 @@
+list1=[12,-7,5,64,-14]
+
+for x in list1:
+    if x>=0:
+        print(x, end=',')
+
+print("\n-----------------------\n")
+
+list2=[12,14,-5,3]
+
+for x in list2:
+    if x>=0:
+        print(x, end=',')
