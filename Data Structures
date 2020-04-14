@@ -1,0 +1,30 @@
+#assigning elements to different lists
+
+list1=[1,2,3,4]
+list2=[7,8,9]
+
+list1.append(5)
+list2.append(10)
+
+print(list1)
+print(list2)
+
+#accessing tuple elements
+
+tuple1=("c++","C","java","php","python")
+
+#indexing
+print(tuple1[0])
+print(tuple1[1])
+
+#negative indexing
+print(tuple1[-1])
+
+#deleting different dictionary items 
+dict1 = {1: 'C++', 2: 'Java', 3: 'PHP', 4: 'Python'} 
+print(dict1)
+remove = [1, 3]
+for key in remove:
+  del dict1[key]
+
+print(dict1)
