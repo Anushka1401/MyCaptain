@@ -26,23 +26,3 @@ insert into prerequisite values('CS3320', 'CS1310');
 
 /* Q3 */
 
-select course.course_name, grade_report.grade 
-from grade_report join course join student 
-where student.major=course.department and grade_report.student_number=student.student_number and student.sname="Smith";
-
-/* Q4 */
-
-select student.sname, grade_report.grade, course.course_name, section.semester, section.syear 
-from student join grade_report join section join course
-where student.student_number=grade_report.student_number and 
-grade_report.section_identifier=section.section_identifier and
-course.course_number=section.course_number and
-course.course_name="Database" and
-section.semester="Fall" and
-section.syear=08;
-
-/* Q5 */
-
-select prerequisite.prerequisite_number, course.course_name 
-from prerequisite join course 
-where prerequisite.course_number=course.course_number and course.course_name="Database";
